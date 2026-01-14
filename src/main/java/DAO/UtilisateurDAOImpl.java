@@ -36,4 +36,13 @@ public class UtilisateurDAOImpl implements UtilisateurDAO {
         return ligne > 0;
     }
 
+    @Override
+    public boolean delete(int id, Utilisateur u, Connection c) throws SQLException {
+        PreparedStatement pst = c.prepareStatement("delete from Utilisateur where idUtilisateur = ?");
+        pst.setInt(1, id);
+        int ligne = pst.executeUpdate();
+        return ligne > 0;
+
+    }
+
 }

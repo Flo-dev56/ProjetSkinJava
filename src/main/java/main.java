@@ -12,7 +12,7 @@ public class main {
                 "jdbc:mysql://109.234.166.12:3306/tima6358_kpinel", "tima6358_kpinel", "@Bidoof56!");
         Statement st = cx.createStatement();
         //execute la requete
-        ResultSet rs = st.executeQuery("SELECT * FROM Balance;");
+        ResultSet rs = st.executeQuery("SELECT * FROM U;");
 
         //parcours du resultat
         if (rs.next()){
