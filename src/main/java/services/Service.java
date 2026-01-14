@@ -12,7 +12,7 @@ public class Service {
             //connexion à la base de donnée
             Connection cx = DriverManager.getConnection(
                     "jdbc:mysql://109.234.166.12/tima6358_kpinel",
-                    "tima6358_kpinel", "@Bidoll");
+                    "tima6358_kpinel", "@Bidoof56!");
         } catch (ClassNotFoundException | SQLException e) {
             throw new RuntimeException(e);
         }
