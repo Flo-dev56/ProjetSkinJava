@@ -1,14 +1,22 @@
 package modele;
 
 public class Utilisateur {
-    private String pseudo;
     private int idUtilisateur;
+    private String pseudo;
+    private int montant;
 
     //Constructeur
-
-
-    public Utilisateur(String pseudo, int idUtilisateur) {
+    public Utilisateur(int idUtilisateur, int montant, String pseudo) {
+        this.idUtilisateur = idUtilisateur;
+        this.montant = montant;
         this.pseudo = pseudo;
+    }
+
+    public int getIdUtilisateur() {
+        return idUtilisateur;
+    }
+
+    public void setIdUtilisateur(int idUtilisateur) {
         this.idUtilisateur = idUtilisateur;
     }
 
@@ -20,11 +28,11 @@ public class Utilisateur {
         this.pseudo = pseudo;
     }
 
-    public int getIdUtilisateur() {
-        return idUtilisateur;
+    public int getMontant() {
+        return montant;
     }
 
-    public void setIdUtilisateur(int idUtilisateur) {
-        this.idUtilisateur = idUtilisateur;
+    public void setMontant(int montant) {
+        this.montant = montant;
     }
 }
